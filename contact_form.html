@@ -1,0 +1,126 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mask Order Form</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet"  href="contact_form.css"/>
+
+    <script>   
+    function Calculate()
+    { 
+      var NoOfMasks= document.getElementById("selectbtn").value;
+        
+        var cost=NoOfMasks * 20;
+       //document.write("No of masks",NoOfMasks + "");
+        //document.write("cost=",cost);
+         document.getElementById("price").value="$"+ cost ;
+    }
+       </script> 
+</head>
+<body>
+    <header> <!-- Header Navigation Element -->
+          <nav>
+               <div class="logo">
+                    <h1><img id="logo" src="masklogo.png"/> </h1>
+                    <span>MaskedUp</span> 
+               </div>
+               <div class="links">
+                    <a href="index.html" onmouseover="focus()" onmouseleave="blur()"> Homepage </a> 
+                    <a href="product.html" onmouseover="focus()" onmouseleave="blur()"  > Product </a>  
+                    <a href="contact_form.html" onmouseover="focus()" onmouseleave="blur()"> Order Contact Form </a>
+                    <a href="store.html" onmouseover="focus()" onmouseleave="blur()">Store/Location </a> 
+                    <a href="mission.html" onmouseover="focus()" onmouseleave="blur()"> Mission </a>                         
+               </div>
+          </nav>
+     </header>
+        <div id="MaskOrder"> 
+              <br/>
+                     <h2> Mask Order form</h1>  
+           <br/>
+            
+           <label id="lblmask"> Masks</label>
+            <br/>
+           <img id="img1" src="n95img.jpg"/> 
+           <br/>
+           <label><b> N95 Mask with Valve</b></label>
+           <br/>
+           <lable id="cost"><b>$20</b> </lable>
+           <br/>
+           <br/>
+           <label  id="NoMasks"> No. of Masks:</label>
+            <label> Mask Size:</label>
+<br/>
+<br/>
+<select  id="selectbtn" onchange="Calculate()"> 
+    <option> 1</option>
+    <option> 2</option>
+    <option> 3</option>
+    <option> 4 </option>
+    <option> 5 </option>
+    <option> 6 </option>
+     <option>7</option>
+     <option>8</option>
+     <option>9</option>
+     <option>10</option>
+   </select>
+   <select id="selectsize"> 
+    <option value="small"> Small</option>
+    <option value="Standard"> Standard</option>
+    <option value="large">Large</option>
+   </select>
+  <br/>
+  <br/>
+  <label id="lblTotal"> <b>Total : </b></label>
+ <output id="price"> </output>
+ 
+<br/>
+<br/>
+        </div>
+<div id="contact_form">
+           <br/>
+        <label> Name: </label>
+        <br/>
+        <br/>
+        <input type="text" id="fname" >
+           <input id="txtlname" type="text" />
+    <br/>
+    <label id="lblfname"> First Name  </label>
+    
+    <label id="lname"> Last Name </label>
+    <br/>
+   <br/>
+<label> Mobile/Phone: </label>
+<br/>
+<br/>
+<input id="txtmobile"  type="text"/>
+<br/>
+<br/>
+<label>Email: </label>
+<br/>
+<br/>
+<input type="text" id="txtemail"/>
+<br/>
+<label>example@example.com</label>
+<br/>
+<br/>
+<label>Mailing Address : </label>
+<br/>
+<textarea id="mailAdd"> </textarea>
+<br/>
+<br/>
+<label> Sign for Email/Newsletter: </label>
+<br/>
+<br/>
+<input type="radio"  value="Yes"> Yes </input>
+ 
+<input type="radio" value="No"> No </input>
+<br/>
+     
+<br/>
+<input type="button" id="subbtn"  value="Submit"/> 
+</div>
+    
+</body>
+</html>

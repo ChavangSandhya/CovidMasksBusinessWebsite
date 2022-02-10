@@ -1,0 +1,55 @@
+h2 {
+   
+    color: navy;
+}
+  
+#maskedup {
+     
+    font-size:32px;
+    margin-left:45%;
+    font-family: Arial, san serif;
+    animation-name: colorchange;
+    animation: colorchange 8s infinite;
+    display:flex;
+    text-align:center;
+     
+}
+
+@keyframes colorchange {
+    from {color:slateblue;}
+    to {color: mediumblue;}
+}
+
+.Mask > div {
+    width: 400px;
+    height: 400px;
+}
+
+.Mask {
+    display: flex;
+    justify-content: center;
+}
+
+.paragraph > div {
+    padding: 50%;
+}
+
+#paragraph2 > div {
+    margin-left: 25%;
+    padding-left: 50%;
+}
+
+.list > li {
+    margin-left: 50px;
+    list-style-position: inside;
+    padding: 10px;
+}
+
+img{
+    align-content: center;
+     margin-top:50px;
+     margin-left:150px;
+     margin-right:80px;
+     border-radius: 10px;
+}
+  

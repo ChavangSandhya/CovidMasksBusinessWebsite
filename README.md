@@ -1,2 +1,2 @@
-# CovidMasksBusinessWebsite
-"This is a Group Project submitted to Albany Cancode"
+# Covid19MasksGroupProject
+This is a Group project submitted to Albany Cancode 

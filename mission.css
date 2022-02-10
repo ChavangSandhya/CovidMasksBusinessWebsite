@@ -1,0 +1,26 @@
+/* Container box */
+.content {
+     display: flex;
+     flex-flow: row wrap;
+     justify-content: center;
+     margin: 0 auto;
+     width: 80%;
+}
+
+.content > div {
+     width: 30%;
+}
+ #txt{margin-left:50px;}
+img {
+     width: 400px;
+     height: 500px;
+     border-radius: 10px;
+}
+
+/* Media query to stack divs when screen is smaller than 1200px */
+@media screen and (max-width: 1200px) {
+
+     .content > div {
+          width: 100%;
+     }
+}
